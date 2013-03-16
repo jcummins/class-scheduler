@@ -1,0 +1,25 @@
+!!! 5
+html(lang='en')
+    head
+        meta(charset='utf-8')
+        meta(name='viewport',content='width=device-width')
+        title= title
+        //if lt IE 9
+            script(src='http://html5shiv.googlecode.com/svn/trunk/html5.js')
+        //
+            Included JS Files
+        script(type='text/javascript', src='http://canvg.googlecode.com/svn/trunk/rgbcolor.js')
+        script(type='text/javascript', src='http://canvg.googlecode.com/svn/trunk/canvg.js')
+        script(type='text/javascript', src='javascripts/d3.v3.min.js')
+        link(type='text/css', rel="stylesheet", href='stylesheets/app.css')
+    body
+        .header.row
+            h4= title
+        .body.row.scoll-y
+            p the body
+        .footer.row
+            p my footer
+        script(type='text/javascript')
+            var data=!{data};
+            var errors=!{errors};
+        script(type='text/javascript', src='javascripts/app.js')
